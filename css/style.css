@@ -10,9 +10,9 @@
   --font-code: 'Roboto', monospace;
   --bg-color: #00163f;
   --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
-  --header-shadow: #000 0px 0px 5px;
+  --btn-bg-color: #25be32;
+  --accent-color: #041cf7;
+  --header-shadow: #000 0px 0px 25px;
 }
 
 * {
@@ -22,10 +22,10 @@
 }
 
 body {
-  background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
   height: 100vh;
+  background: var(--bg-color);
   color: var(--font-color);
   font-family: var(--font-primary);
 }
@@ -52,7 +52,7 @@ header .container {
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 9rem;
   align-items: center;
 }
 
@@ -66,7 +66,7 @@ header .container {
   font-family: var(--font-secondary);
   font-style: italic;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
   box-shadow: 4px 4px 0 0 var(--accent-color);
@@ -86,9 +86,10 @@ header .container {
 }
 
 .hero-btn {
-  border-radius: 4px;
-  font-size: 1.2rem;
+  border-radius: 10px;
+  font-size: 2rem;
   padding: 1.5rem 3rem;
+  margin: 9px;
 }
 
 /* COUNTDOWN SECTION */
@@ -98,6 +99,7 @@ section {
 }
 
 .countdown {
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,30 +109,32 @@ section {
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 3rem
 }
 .countdown .clock-item {
   list-style: none;
-  width: 70px;
+  width: 120px;
   height: auto;
 }
 .countdown .clock-item .count-number {
-  background: var(--accent-color);
+  background-image: linear-gradient(60deg, rgba(0, 0, 255, 0.2), rgba(0, 68, 255));
   color: var(--font-color);
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   font-family: var(--font-secondary);
-  padding: 1rem;
+  padding: 3rem;
   display: inline-block;
   width: 100%;
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 25px black;
+  border: 3px solid #62018f;
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   color: var(--bg-color);
   padding: 0.5rem 0.7rem;
   display: inline-block;
@@ -138,18 +142,20 @@ section {
   text-align: center;
   line-height: 1;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 25px black;
+  border: 3px solid #62018f;
 }
 
 .countdown h1 {
   text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
-  font-size: 3.5rem;
+  font-size: 3.9rem;
   text-align: center;
 }
 
 .countdown p {
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   font-family: var(--font-secondary);
   margin-bottom: 2rem;
   text-align: center;
